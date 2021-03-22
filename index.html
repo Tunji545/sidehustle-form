@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=¬, initial-scale=1.0" />
+    <title>Coursera is so cool!</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>create account</h1>
+        <P>It's free and hardly takes more than 30 seconds</P>
+        <form id="signup" class="form" method="post" action="result.html">
+          <div class="form-field">
+            <label for="username"> <i class="fa fa-user"></i></label>
+            <input id="username" name="username" type="text" placeholder="Username" autocomplete="off"><br>           
+            <small></small>
+          </div>
+          <div class="form-field">
+            <label for="email"> <i class="fa fa-location-arrow"></i></label>
+            <input id="email" name="email" type="email" placeholder="Email Address" autocomplete="off"><br>          
+            <small></small>
+          </div>
+          <div class="form-field">
+            <label for="password"> <i class="fa fa-lock"></i> </label>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="off">
+            <input type="checkbox" onclick="myFunction()"><span>toggle</span>          
+            <small></small>
+          </div>
+          <div class="form-field">
+            <label for="confirm-password"> <i class="fa fa-lock"></i> </label>
+            <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm Password" class="second" autocomplete="off"> <br>        
+            <small></small>
+          </div>
+          <div class="form-field">
+            <input type="submit" value="Sign Up" class="btn">
+          </div>
+        </form>
+        <p>By clicking the Sign Up button, you agree to our <span>Terms &amp; Condition,</span> and <span>Privacy Policy</span</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+body {
+  background-color: #dcdcdc;
+}
+main {
+  background-color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightslategrey;
+  margin: 40px auto 0 auto; 
+  width: 85%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+div {
+  margin: 0 auto 0 auto; 
+  padding-top: 20px;
+  width: 90%;
+}
+h1 + p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+input {
+  width: 90%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+input[placeholder] {
+  padding-left: 30px;
+  padding-bottom: 5px;
+  /* text-transform: capitalize; */
+}
+form div:nth-child(3) {
+  width: 85%;
+  margin-left: 3%;
+  display: inline-block;
+}
+#password + input {
+  display: inline-block;
+  width: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+  top: 15px;
+}
+#password + input + span {
+  color: lightslategrey;
+  position: relative;
+  top: 15px;
+}
+label {
+  position: relative;
+}
+label i {
+  position: absolute;
+  left: 2px;
+}
+i {
+  color: #000;
+}
+.btn {
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-transform: capitalize;
+  background-color:teal;
+  border: teal;
+  margin-bottom: 20px;
+}
+input.second {
+  margin-bottom: 20px;
+}
+span {
+  color: rgb(9, 187, 187);
+}
+form + p {
+  padding-bottom: 40px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.form-field input:focus {
+  outline: none;
+}
+.form-field.error input {
+  border-color: var(--error-color);
+}
+.form-field.success input {
+  border-color: var(--success-color);
+}
+.form-field small {
+  color: var(--error-color);
+}
+.btn:hover {
+  background: #0069d9;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+
+@media (min-width: 882px) and (max-width: 976px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 3%;
+  }
+  #password + input {
+    margin-left: -1px;
+  }
+}
+@media (min-width: 851px) and (max-width: 881px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left: -1px;
+  }
+}
+@media (min-width: 817px) and (max-width: 850px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left:-3px;
+  }
+}
+@media (min-width: 766px) and (max-width: 816px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left:-6px;
+  }
+}
+@media (min-width: 612px) and (max-width: 765px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left:-15px;
+  }
+}
+@media (min-width: 442px) and (max-width: 611px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left:-25px;
+  }
+}
+@media (max-width: 441px) {
+  form div:nth-child(3) {
+    width: 85%;
+    margin-left: 4%;
+  }
+  #password + input {
+    margin-left:-35px;
+  }
+  .form-field.error > #password + input + span {
+    border-color: var(--error-color);
+    color: lightslategrey !important;
+  }
+}
